@@ -18,8 +18,7 @@ PostController.controller('PostController', ['$rootScope', '$scope', '$http', '$
 		$http.get(siteName + '/api/v1/thread')
 			.success(function(data){
 				$scope.posts = data.data;
-			//	console.log($scope.posts);
-				//console.log($scope.posts);
+		
 				
 		})};
 			
@@ -28,6 +27,10 @@ PostController.controller('PostController', ['$rootScope', '$scope', '$http', '$
 	$scope.createThread = function(){
 		$http.post(siteName + '/api/v1/thread', {topic: $scope.threadTopic, description: $scope.threadDescription})
             .success(function (data) {
+            	if($scope.posts == null){
+            		$scope.posts=[];
+
+            	}
 
             	
             	$scope.posts.push(data.data)
@@ -78,11 +81,7 @@ PostController.controller('PostController', ['$rootScope', '$scope', '$http', '$
     			 $scope.posts[$keyy].comment.splice($i, 1);
     			// console.log($scope.posts[$keyy].comment.indexOf($comment_id));
     			// var index =$scope.posts[$keyy].comment.indexOf($comment_id);
-    			// $scope.posts[$keyy].comment.splice(index, 1);
-    			// console.log(indexOf($scope.posts[$keyy].comment[$key].id));
-
-    			// $scope.posts[$keyy].comment[$key].splice($scope.posts[$keyy].comment[$key].indexOf($scope.posts[$keyy].comment[$key].id),1);
-
+    		
     		});
     	
     }
@@ -96,15 +95,7 @@ PostController.controller('PostController', ['$rootScope', '$scope', '$http', '$
     	  });
 
     }
-    $scope.editItem = function (item) {
-    	item.editing = true;
-	}
-
-	$scope.doneEditing = function (item) {
-    	item.editing = false;
-    //dong some background ajax calling for persistence...
-	};
-
+   
 }]);
 
 PostController.controller('replyController', ['$rootScope', '$scope', '$http', '$window', function ($rootScope, $scope, $http, $window) {
@@ -120,11 +111,7 @@ PostController.controller('replyController', ['$rootScope', '$scope', '$http', '
             	// console.log($scope.posts);
             	// $scope.posts[$key].comment.push(data.data);
 
-             	 // for(var key in $scope.posts){
-            	 //    $scope.posts[key].comment.push(data.data);
-            	 //    $scope.newData = data.data;
-
-            	 // }
+            
          });
     	
 

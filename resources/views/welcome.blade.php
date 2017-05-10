@@ -1,9 +1,6 @@
 @extends('web.layouts.front')
-here
+
 <style type="text/css">
-    .container{
-     /*background-color: grey*/
-    }
 
     .comment{
         background-color: grey
@@ -42,7 +39,6 @@ here
         </div>
        </div>
     </div>
-        <!-- <p><a href="#" ng-click="deleteComment(post.id)" class="text-muted">Delete</a></p> -->
          </div>
           <div ng-repeat = "reply in replies">
           <h3> @{{reply.reply}}</h3>
