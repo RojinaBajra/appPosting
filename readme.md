@@ -18,6 +18,9 @@ You will need the following things properly installed on your computer.
 * `php artisan key:generate
 * cp .env.example .env [change the environment variables like database name]
 * create databases app_posting in mysql
+* php artisan migrate (migrate tables) 
+* php artisan db:seed ( Run all seeders)
+
 
 ## Running / Development
 
@@ -25,7 +28,6 @@ You will need the following things properly installed on your computer.
 * Your server will be running in [http://localhost:8000](http://localhost:8000)
 
 ### Running Tests
-
 
 
 #### Contributors: [Rojina Bajracharya](https://github.com/shrsujan)
