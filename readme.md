@@ -14,7 +14,7 @@ You will need the following things properly installed on your computer.
 
 * `git clone <repository-url>` this repository
 * `cd appPosting`
-* `composer install install`
+* `composer install
 * `php artisan key:generate
 * cp .env.example .env [change the environment variables like database name]
 * create databases app_posting in mysql
