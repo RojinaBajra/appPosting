@@ -21,6 +21,12 @@ You will need the following things properly installed on your computer.
 * php artisan migrate (migrate tables) 
 * php artisan db:seed ( Run all seeders)
 
+## To install in homestead environment 
+  * `install vagrant
+  * `install virtual box
+  * `follow this link : [https://laravel.com/docs/5.4/homestead]
+
+
 
 ## Running / Development
 
