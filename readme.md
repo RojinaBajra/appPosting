@@ -16,10 +16,10 @@ You will need the following things properly installed on your computer.
 * `cd appPosting`
 * `composer install
 * `php artisan key:generate
-* cp .env.example .env [change the environment variables like database name]
-* create databases app_posting in mysql
-* php artisan migrate (migrate tables) 
-* php artisan db:seed ( Run all seeders)
+* `cp .env.example .env [change the environment variables like database name]
+* `create databases app_posting in mysql
+* `php artisan migrate (migrate tables) 
+* `php artisan db:seed ( Run all seeders)
 
 ## To install in homestead environment 
   * `install vagrant
