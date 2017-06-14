@@ -25,6 +25,8 @@ You will need the following things properly installed on your computer.
   * `install vagrant
   * `install virtual box
   * `follow this link : [https://laravel.com/docs/5.4/homestead]
+  * `make changes in homestead.yaml file giving correct maps and sites
+  * `Also, make changes in host file adding ip and host name like [192.168.0.0 appPosting.dev]
 
 
 
